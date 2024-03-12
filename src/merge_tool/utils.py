@@ -1,3 +1,7 @@
+#The code defines a function `merge_the_tools`
+# that splits a string into substrings of a specified length,
+# removes duplicate characters from each substring,
+# and logs the resulting substrings.
 import logging
 logging.basicConfig(level=logging.INFO,format='%(message)s')
 def merge_the_tools(s, k):
