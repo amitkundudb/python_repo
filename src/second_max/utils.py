@@ -3,7 +3,6 @@
 #In case of error it will give error message "-1"
 
 import logging
-
 def find_second_most_number():
     logging.basicConfig(level=logging.INFO,format='%(message)s')
     n = int(input().strip())
