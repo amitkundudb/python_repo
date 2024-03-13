@@ -4,7 +4,9 @@
 # and logs the resulting substrings.
 import logging
 logging.basicConfig(level=logging.INFO,format='%(message)s')
-def merge_the_tools(s, k):
+def merge_the_tools():
+    s = input()
+    k = int(input())
     substrings = [s[i:i+k] for i in range(0, len(s), k)]
     for substring in substrings:
         seen = set()
@@ -14,6 +16,3 @@ def merge_the_tools(s, k):
                 result += char
                 seen.add(char)
         logging.info(result)
-
-s = input()
-k = int(input())
