@@ -1,3 +1,4 @@
+#String of text aligned left, right and center
 import logging
 
 def text_alignment(thickness):
