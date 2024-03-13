@@ -11,3 +11,4 @@ def get_day_of_week():
     weekday_number = calendar.weekday(y, m, d)
     weekday_name = calendar.day_name[weekday_number]
     logging.info(weekday_name.upper())
+    return weekday_name.upper()
