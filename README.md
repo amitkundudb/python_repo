@@ -26,8 +26,6 @@ These files contain test cases that verify the correctness of the utility functi
 Test cases cover various scenarios, edge cases, and expected outcomes.
 By running these test cases, you can ensure that the functions behave as intended.
 
-This repo is my personal collection of handy Python utility functions! I'm constantly building tools to streamline common tasks, and this is where I keep them organized.
-
 Let's break down some of the highlights:
 
 * Need to work with dates? The `calender_module` has you covered.
