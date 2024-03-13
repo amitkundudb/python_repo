@@ -1,6 +1,7 @@
 import logging
 
-def string_format(number):
+def string_format():
+    number = int(input())
     width = len(bin(number)[2:])
     logging.basicConfig(level=logging.INFO, format='%(message)s')
     for i in range(1, number + 1):
@@ -9,5 +10,3 @@ def string_format(number):
         hexadecimal = hex(i)[2:].upper().rjust(width)
         binary = bin(i)[2:].rjust(width)
         logging.info(f"{decimal} {octal} {hexadecimal} {binary}")
-# Taking user input
-number = int(input())
