@@ -1,7 +1,8 @@
 #String of text aligned left, right and center
 import logging
 
-def text_alignment(thickness):
+def text_alignment():
+    thickness = int(input())
     c = 'H'
     logging.basicConfig(level=logging.INFO, format='%(message)s')
 
@@ -24,6 +25,3 @@ def text_alignment(thickness):
     # Bottom Cone
     for i in range(thickness):
         logging.info(((c * (thickness - i - 1)).rjust(thickness) + c + (c * (thickness - i - 1)).ljust(thickness)).rjust(thickness * 6))
-
-# Taking user input
-thickness = int(input())
