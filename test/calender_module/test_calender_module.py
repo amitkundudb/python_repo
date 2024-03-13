@@ -1,7 +1,5 @@
 import unittest
 from src.calender_module.utils import get_day_of_week
-
-
 class CalenderModuleTest(unittest.TestCase):
     def test_one(self):
         self.assertEquals(get_day_of_week(), "WEDNESDAY")
