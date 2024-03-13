@@ -5,11 +5,9 @@
 import logging
 import calendar
 
-def get_day_of_week(year, month, day):
+def get_day_of_week():
+    m, d, y = map(int, input().split())
     logging.basicConfig(level=logging.INFO, format='%(message)s')
-    weekday_number = calendar.weekday(year, month, day)
+    weekday_number = calendar.weekday(y, m, d)
     weekday_name = calendar.day_name[weekday_number]
     logging.info(weekday_name.upper())
-
-# Taking user input
-m, d, y = map(int, input().split())
