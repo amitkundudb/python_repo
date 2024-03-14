@@ -14,3 +14,4 @@ def word_order():
     word_counts = Counter(words)
     logging.info(len(word_counts))
     logging.info(' '.join(map(str,word_counts.values())))
+    return f"{len(word_counts)}\n{' '.join(map(str, word_counts.values()))}"

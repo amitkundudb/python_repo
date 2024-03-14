@@ -5,6 +5,7 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
 
 
 def time_delta():
+    results = []
     num_test_cases = int(input())
     for _ in range(num_test_cases):
         t1_str = input()
@@ -14,3 +15,5 @@ def time_delta():
         delta = abs(t1 - t2).total_seconds()
         result = int(delta)  # Convert to integer for the final result
         logging.info(result)
+        results.append(result)
+    return '\n'.join(map(str, results))
