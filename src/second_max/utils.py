@@ -11,5 +11,7 @@ def find_second_most_number():
     unique_arr = sorted(arr_set, reverse=True)
     if len(unique_arr) > 1:
         logging.info(unique_arr[1])
+        return unique_arr[1]
     else:
         logging.error("-1")
+        return -1

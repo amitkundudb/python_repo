@@ -18,12 +18,13 @@ def calculate_average_marks(student_marks, query_name):
         avg_marks = sum(student_marks[query_name]) / len(student_marks[query_name])
         return avg_marks
     else:
-        logging.error("Student name not found in records")
+        return None
+
 def average_marks():
     student_marks = read_student_marks()
     query_name = input().strip()
     avg_marks = calculate_average_marks(student_marks, query_name)
-    if avg_marks:
-        logging.info(f"{avg_marks:.2f}")
+    if avg_marks is not None:
+        return round(avg_marks, 2)
     else:
-        logging.error("Failed to calculate average marks")
+        return "Failed to calculate average marks"

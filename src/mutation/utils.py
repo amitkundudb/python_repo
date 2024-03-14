@@ -6,10 +6,11 @@ import logging
 
 def mutate_string_and_return():
     string = input()
-    position = int(input())
-    character = input()
+    position,character = input().split()
+    position = int(position)
     logging.basicConfig(level=logging.INFO, format='%(message)s')
     l = list(string)
     l[position] = character
     string = ''.join(l)
     logging.info(string)
+    return string

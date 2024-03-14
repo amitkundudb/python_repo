@@ -6,7 +6,9 @@ The var along axis 0
 The std along axis NONE '''
 import numpy as np
 import logging
-logging.basicConfig(level=logging.INFO,format='%(message)s')
+
+logging.basicConfig(level=logging.INFO, format='%(message)s')
+
 
 def mean_var_std_fn():
     N, i = map(int, input().split())
@@ -17,3 +19,4 @@ def mean_var_std_fn():
         f"{round(np.std(arr), 11)}"
     ])
     logging.info(result)
+    return result

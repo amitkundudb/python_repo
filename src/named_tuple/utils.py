@@ -8,3 +8,4 @@ def named_tuple():
     Sheet = namedtuple('Sheet', input().split())
     marks= [Sheet._make(input().split()).MARKS for i in range(N)]
     logging.info(sum(map(int, marks))/N)
+    return sum(map(int, marks))/N

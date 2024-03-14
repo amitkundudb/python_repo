@@ -15,3 +15,4 @@ def linearalgebra():
         mtx_a.append(row)
     mtx_det = round(numpy.linalg.det(mtx_a), 2)
     logging.info(mtx_det)
+    return mtx_det

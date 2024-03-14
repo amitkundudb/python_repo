@@ -19,4 +19,5 @@ def iterables_iterators():
         if 'a' in i:
             length += 1
     ratio = length / len(newl)
-    logging.info(round(ratio, 6))
+    logging.info(round(ratio, 3))
+    return round(ratio, 3)

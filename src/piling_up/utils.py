@@ -19,5 +19,7 @@ def piling_up():
         b.sort(reverse=True)
         if b == c:
             logging.info('Yes')
+            return 'Yes'
         else:
             logging.info('No')
+            return 'No'
