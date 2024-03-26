@@ -9,7 +9,6 @@ Output a single integer, your total happiness.'''
 import logging
 logging.basicConfig(level=logging.INFO,format='%(message)s')
 def no_idea():
-    n, m = (input().split())
     arr = list((input().split()))
     A = set(input().split())
     B = set(input().split())
